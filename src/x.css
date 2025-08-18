@@ -1,0 +1,27 @@
+/* body.light{
+    --bg: white;
+    --text: black;
+} */
+/* Default (light theme) */
+body {
+    --bg: white;
+    --text: black;
+
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* Dark theme */
+body.dark {
+    --bg: black;
+    --text: white;
+}
+html,body{
+    margin: 0;
+    height: 100%;
+}
+
+#root {
+    height:100%;
+    background-color: aqua;
+}
