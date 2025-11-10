@@ -61,7 +61,7 @@ body.light {
 body.dark {
     --bg: var(--bg_Dark);
     --text: var(--text_Dark);
-    --bg_image: url(./assets/background_dark.png);
+    --bg_image: url(./assets/background_dark.jpg);
     --texta: gray;
     --nav_bg: rgba(146, 132, 132, 0.3);
     --nav_text: rgb(220, 220, 220);
