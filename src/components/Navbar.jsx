@@ -52,7 +52,7 @@ function Sidebar({ toggleMode, mode, SidebarOpen, setSidebarOpen }) {
             </a>
 
 
-            <div className={`relative border-2 rounded-full px-2 p-1 h-9 w-18 flex-shrink-0 ${mode === "light" ? "bg-black border-gray-500" : "bg-orange-500/95"}`}>
+            <div className={`relative border-2 rounded-full px-2 p-1 h-9 w-18 flex-shrink-0 ${mode === "light" ? "bg-black border-gray-500" : "bg-orange-500/95 border-gray-300/80"}`}>
                 {/* moving ball */}
                 <div
                     className={`absolute top-1/2 -translate-y-1/2 w-6 h-6 z-2 rounded-full transition-transform duration-500 ease-out ${mode === "light" ? "translate-x-0 bg-white" : "translate-x-[2rem] bg-black"
@@ -75,7 +75,7 @@ function Sidebar({ toggleMode, mode, SidebarOpen, setSidebarOpen }) {
 
 function Navbar() {
     const [SidebarOpen, setSidebarOpen] = useState(false);
-    const [mode, setMode] = useState('light');
+    const [mode, setMode] = useState('dark');
     const toggleMode = () => {
         if (mode === 'light') {
             document.body.classList.add('dark')
