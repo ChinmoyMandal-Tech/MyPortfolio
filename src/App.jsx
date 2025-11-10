@@ -1,20 +1,36 @@
 import './App.css'
-import { NavLink, Outlet} from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { Outlet } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop.jsx'
-
 import Navbar from './components/Navbar.jsx';
+import Loding from './components/Loding.jsx';
+import Footer from './components/Footer.jsx';
 
 
 function App() {
-  
-  
+  const [loding, setLoding] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      document.body.classList.add('dark')
+      setLoding(false)
+    }, 2000)
+  }, []);
+
+  if (loding) {
+    return (
+      <Loding />
+    )
+  }
+
   return <>
-    <div className='h-15'></div>
-    
-    Hello
     <ScrollToTop />
+    <div className='h-15'></div>
     <Navbar />
-    <Outlet />
+    <main className='main'>
+      <Outlet />
+    </main>
+    <Footer />
   </>
 }
 
