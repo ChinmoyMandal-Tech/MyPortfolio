@@ -5,16 +5,28 @@ import ScrollToTop from './components/ScrollToTop.jsx'
 import Navbar from './components/Navbar.jsx';
 import Loding from './components/Loding.jsx';
 import Footer from './components/Footer.jsx';
+import bgDark from './assets/background_dark.jpg';
+import bgLight from './assets/background_light.jpg';
+
 
 
 function App() {
   const [loding, setLoding] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    const imagesToPreload = [bgDark, bgLight];
+
+    imagesToPreload.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+
+    const timer = setTimeout(() => {
       document.body.classList.add('dark')
       setLoding(false)
     }, 2000)
+
+    return () => clearTimeout(timer);
   }, []);
 
   if (loding) {
