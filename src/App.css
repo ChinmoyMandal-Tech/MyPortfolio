@@ -20,7 +20,7 @@ html, body {
 }
 
 body {
-    /* background-color: var(--bg); */
+    background-color: var(--body_bg);
     color: var(--text);
     background-image: var(--bg_image);
     background-size: cover;
@@ -46,6 +46,7 @@ body::before {
 }
 /* Light theme */
 body.light {
+    --body_bg: rgba(125, 125, 125, 0.8);
     --bg: var(--bg_Light);
     --text: var(--text_Light);
     --bg_image: url(./assets/background_light.jpg);
@@ -59,6 +60,7 @@ body.light {
 }
 /* Dark theme */
 body.dark {
+    --body_bg: rgba(0, 0, 0, 0.8);
     --bg: var(--bg_Dark);
     --text: var(--text_Dark);
     --bg_image: url(./assets/background_dark.jpg);

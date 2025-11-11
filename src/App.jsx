@@ -11,10 +11,22 @@ function App() {
   const [loding, setLoding] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    const imagesToPreload = [
+      './src/assets/background_light.jpg',
+      './src/assets/background_dark.jpg'
+    ];
+
+    imagesToPreload.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+
+    const timer = setTimeout(() => {
       document.body.classList.add('dark')
       setLoding(false)
     }, 2000)
+
+    return () => clearTimeout(timer);
   }, []);
 
   if (loding) {
