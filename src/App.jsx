@@ -7,6 +7,7 @@ import Loding from './components/Loding.jsx';
 import Footer from './components/Footer.jsx';
 import bgDark from './assets/background_dark.jpg';
 import bgLight from './assets/background_light.jpg';
+import developer from '/developer.png';
 
 
 
@@ -14,7 +15,7 @@ function App() {
   const [loding, setLoding] = useState(true);
 
   useEffect(() => {
-    const imagesToPreload = [bgDark, bgLight];
+    const imagesToPreload = [bgDark, bgLight, developer];
 
     imagesToPreload.forEach(src => {
       const img = new Image();

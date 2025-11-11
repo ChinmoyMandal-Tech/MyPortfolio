@@ -90,7 +90,7 @@ function Navbar() {
     return (<>
         <nav className="fixed top-0 h-15 w-full min-w-50 flex justify-center text-[var(--nav_text)] bg-[var(--nav_bg)] backdrop-blur-sm z-50">
             
-            <div className="flex items-center text-2xl absolute left-10 h-full">Cm.</div>
+            <div className="flex items-center text-[var(--nav_git_link)] text-2xl absolute left-10 h-full">Cm.</div>
 
             <div className="absolute left-22 hidden sm:flex w-[calc(100vw-88px)] h-full justify-center items-center gap-3 px-2 pr-25">
                 <NavLink
