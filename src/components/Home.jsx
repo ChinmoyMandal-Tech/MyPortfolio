@@ -36,17 +36,13 @@ function Home() {
             <p className="text-2xl leading-relaxed whitespace-pre-line text-[var(--text)]">
                 I’m a Software Engineer who loves transforming ideas into reliable, scalable products.
                 Over time, I’ve explored several technologies and found my passion in building
-                high-performance systems and intuitive user experiences.
-                 <br/><div className="h-4"></div>
+                high-performance systems and intuitive user experiences.</p>
+                <br />
+                <p className="text-2xl leading-relaxed whitespace-pre-line text-[var(--text)]">
                 I’m proficient in <i className="text-[var(--text_highlight)] text-shadow-amber-50 text-shadow-xs"> JavaScript, C++, Node.js, and React</i> — and I enjoy working across both
                 backend and frontend stacks.
             </p>
         </div>
-        <hr className="my-10 border-[var(--hr_border)]" />
-        
-
-
-
 
         <div className="flex flex-col items-center justify-center h-full py-10 px-5 text-center">
             <h1 className="text-4xl font-bold mb-6">Welcome to My Portfolio</h1>
