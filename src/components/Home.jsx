@@ -1,4 +1,5 @@
 import Typing from "./Typing.jsx";
+import developer from '/developer.png';
 
 
 function Home() {
@@ -24,7 +25,7 @@ function Home() {
                 <div className="absolute right-20 top-7 h-1 w-1 rounded-full bg-[var(--text)]"></div>
                 <div className="absolute right-22 top-8 h-1 w-1 rounded-full bg-[var(--text)]"></div>
 
-            <img src="/developer.png" alt="developer" className="w-full max-w-md mx-auto text-shadow-black text-shadow-sm" />
+                    <img src={developer} alt="developer" className="w-full max-w-md mx-auto text-shadow-black text-shadow-sm" />
             </div>
         </div>
         </div>
