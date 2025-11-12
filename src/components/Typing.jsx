@@ -11,13 +11,12 @@ function Typing() {
     const [isDeleting, setIsDeleting] = useState(false);
 
     useEffect(() => {
-        let typingSpeed = isDeleting ? 50 : 150; // speed for typing/deleting
+        let typingSpeed = isDeleting ? 100 : 150; 
         const fullText = texts[currentIndex];
 
         const handleTyping = () => {
             setCurrentText((prev) => {
                 if (!isDeleting) {
-                    // Typing phase
                     const updated = fullText.substring(0, prev.length + 1);
                     if (updated === fullText) {
                         // finished typing, wait 2s before deleting
@@ -25,10 +24,8 @@ function Typing() {
                     }
                     return updated;
                 } else {
-                    // Deleting phase
                     const updated = fullText.substring(0, prev.length - 1);
                     if (updated === "") {
-                        // finished deleting, go to next text
                         setIsDeleting(false);
                         setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
                     }
@@ -42,7 +39,7 @@ function Typing() {
     }, [currentText, isDeleting, currentIndex]);
 
     return (<span className="">
-        {
+        {/* {
             currentText.split("").map((char, index) => (
                 <span
                     key={index}
@@ -52,7 +49,9 @@ function Typing() {
                     {char === " " ? "\u00A0" : char}
                 </span>
             ))
-        }
+        } */}
+        <span className="text-shadow-white text-shadow-sm/50">{currentText}</span>
+        <span className="blinking-cursor">|</span>
     </span>
 );
 }

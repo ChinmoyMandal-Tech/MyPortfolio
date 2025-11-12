@@ -17,9 +17,8 @@ function Home() {
                 <Typing />
             </div>
             </div>
-            
-            <div className=" md:mt-5 md:relative w-60 absolute right-[10%]">
-                {/* <span className="absolute top-0 left-0 w-full h-full bg-[var(--nav_git_link)] rounded-lg opacity-30 blur-lg animate-pulse"></span> */}
+            <div className="">
+            <div className=" md:mt-5 md:relative w-60 h-60 absolute right-20">
                 <span className=" absolute right-5 border px-2 rounded-2xl animaHello">Hello</span>
                 <div className="absolute right-17 top-5 h-2 w-2 rounded-full bg-[var(--text)]"></div>
                 <div className="absolute right-20 top-7 h-1 w-1 rounded-full bg-[var(--text)]"></div>
@@ -28,6 +27,24 @@ function Home() {
             <img src="/developer.png" alt="developer" className="w-full max-w-md mx-auto text-shadow-black text-shadow-sm" />
             </div>
         </div>
+        </div>
+        <div className="max-w-3xl mx-auto my-5 px-4">
+            <h2 className="text-4xl text-center pr-10 font-semibold mb-10 text-[var(--text)]">
+                Let Me Introduce <span className="text-[var(--text_highlight)] text-shadow-amber-50 text-shadow-xs"> Myself</span>
+            </h2>
+            <p className="text-2xl leading-relaxed whitespace-pre-line text-[var(--text)]">
+                I’m a Software Engineer who loves transforming ideas into reliable, scalable products.
+                Over time, I’ve explored several technologies and found my passion in building
+                high-performance systems and intuitive user experiences.
+                 <br/><div className="h-4"></div>
+                I’m proficient in <i className="text-[var(--text_highlight)] text-shadow-amber-50 text-shadow-xs"> JavaScript, C++, Node.js, and React</i> — and I enjoy working across both
+                backend and frontend stacks.
+            </p>
+        </div>
+        <hr className="my-10 border-[var(--hr_border)]" />
+        
+
+
 
 
         <div className="flex flex-col items-center justify-center h-full py-10 px-5 text-center">
