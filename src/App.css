@@ -59,6 +59,9 @@ body.light {
     --nav_git_link: rgb(138, 76, 251);
     --bg_hello: rgb(67, 65, 65);
     --text_hello: white;
+    --text_highlight: red;
+    --skill_bg: rgba(200, 200, 200, 0.5);
+    --skill_text: black;
 }
 /* Dark theme */
 body.dark {
@@ -76,6 +79,9 @@ body.dark {
     --nav_git_link: rgb(201, 91, 245);
     --bg_hello: rgb(242, 229, 229);
     --text_hello: black;
+    --text_highlight: rgb(201, 91, 245);
+    --skill_bg: rgba(50, 50, 50, 0.5);
+    --skill_text: white;
 }
 p{
     height: 100%;
@@ -83,9 +89,13 @@ p{
 }
 #sidebar, nav{
     font-family: 'Momo Trust Display', sans-serif;
+    /* font-family: "Cormorant Garamond", serif; */ 
+    /* font-family: "Roboto Slab", serif; */
 
-    /* font-family: 'Cormorant Garamond', serif; */
 }
+ #about_main{
+    font-family: "Roboto Slab", serif;
+ }
 
 nav>div>span {
     display: block;
