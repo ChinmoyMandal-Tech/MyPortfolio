@@ -5,7 +5,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './components/Home.jsx'
 import About from './components/about/About.jsx'
 import A from "./components/a.jsx";
-import B from "./components/b.jsx";
 import PageNotFound from './components/PageNotFound.jsx';
 
 const router = createBrowserRouter([
@@ -16,7 +15,7 @@ const router = createBrowserRouter([
       { path: "", element: <Home /> },
       { path: "about", element: <About /> },
       { path: "projects", element: <A /> },
-      { path: "resume", element: <B /> },
+      { path: "resume", element: <A /> },
       { path: "xyz", element: <A /> },
       { path: "*", element: <PageNotFound /> },
     ]

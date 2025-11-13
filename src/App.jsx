@@ -7,7 +7,7 @@ import Loding from './components/Loding.jsx';
 import Footer from './components/Footer.jsx';
 import bgDark from './assets/background_dark.jpg';
 import bgLight from './assets/background_light.jpg';
-import developer from '/developer.png';
+import developer from './assets/developer.png';
 import sadIcon from './assets/sad_icon.png';
 
 

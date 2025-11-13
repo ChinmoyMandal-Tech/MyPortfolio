@@ -1,5 +1,5 @@
 import Typing from "./Typing.jsx";
-import developer from '/developer.png';
+import developer from '../assets/developer.png';
 
 
 function Home() {
