@@ -2,7 +2,7 @@ function Footer() {
     const mailId = "chinmoymandal925809@gmail.com";
 
     return (
-        <footer className="relative pt-2.5 bg-[var(--footer_bg)] text-center">
+        <footer id="main_footer" className="relative w-full pt-2.5 bg-[var(--footer_bg)] text-center">
             <div className="flex w-ful justify-center space-x-7">
                 <div className="relative">
                     <a
