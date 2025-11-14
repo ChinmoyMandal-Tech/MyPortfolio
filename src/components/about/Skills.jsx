@@ -10,7 +10,7 @@ import TailwindLogo from '../../assets/TechIcon/Tailwind.svg';
 import postmanLogo from '../../assets/TechIcon/Postman.svg';
 import CPlusLogo from '../../assets/TechIcon/C++.svg';
 
-import vscode from '../../assets/TechIcon/VSCode.svg';
+import vscode from '../../assets/TechIcon/vscode.svg';
 import chrome from '../../assets/TechIcon/Google Chrome.svg';
 
 
