@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Typing from "./Typing.jsx";
 import developer from '../assets/developer.png';
 
@@ -47,9 +48,9 @@ function Home() {
         <div className="flex flex-col items-center justify-center h-full py-10 px-5 text-center">
             <h1 className="text-4xl font-bold mb-6">Welcome to My Portfolio</h1>
             <p className="text-lg mb-8">Explore my projects and skills.</p>
-            <a href="/projects" className="flex items-center justify-center gap-2 text-white bg-green-600 hover:bg-green-800 px-6 py-3 rounded-md transition-colors duration-300">
+            <Link to="/projects" className="flex items-center justify-center gap-2 text-white bg-green-600 hover:bg-green-800 px-6 py-3 rounded-md transition-colors duration-300">
                 <i className="fa-solid fa-folder-open"></i> View Projects
-            </a>
+            </Link>
         </div>
     </section>
     );

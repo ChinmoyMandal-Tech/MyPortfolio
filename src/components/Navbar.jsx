@@ -45,7 +45,7 @@ function Sidebar({ toggleMode, mode, SidebarOpen, setSidebarOpen }) {
             <a
                 href="https://github.com/ChinmoyMandal-Tech/MyPortfolio"
                 target="_blank"
-                className={`py-2 mb-1 px-3 w-18 text-gray-200 bg-[var(--nav_git_link)] hover:text-gray-700 border rounded-2xl flex justify-center gap-2 cursor-pointer`
+                className={`py-2 mb-1 px-3 w-18 text-gray-200 bg-gradient-to-b from-[var(--nav_git_link)] to-pink-600/60 hover:text-gray-700 transition-all duration-300 hover:scale-105 rounded-2xl flex justify-center gap-2 cursor-pointer`
                 }>
                 <i className="fa-solid fa-code-branch"></i>
                 <i className="fa-regular fa-star"></i>
@@ -129,7 +129,7 @@ function Navbar() {
                     href="https://github.com/ChinmoyMandal-Tech/MyPortfolio"
                     target="_blank"
                     className={
-                        `py-2 px-3 w-18 text-gray-200 bg-[var(--nav_git_link)] hover:text-gray-700 border rounded-2xl flex justify-center gap-3 cursor-pointer`
+                        `py-2 px-3 w-18 text-gray-200 bg-gradient-to-b from-[var(--nav_git_link)] to-pink-600/60 hover:text-gray-700 transition-all duration-300 hover:scale-110 rounded-2xl flex justify-center gap-3 cursor-pointer`
                     }>
                     <i className="fa-solid fa-code-branch"></i>
                     <i className="fa-regular fa-star"></i>

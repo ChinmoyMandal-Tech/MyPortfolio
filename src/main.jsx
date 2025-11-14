@@ -4,6 +4,7 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './components/Home.jsx'
 import About from './components/about/About.jsx'
+import ProjectPage from './components/project/ProjectPage.jsx'
 import A from "./components/a.jsx";
 import PageNotFound from './components/PageNotFound.jsx';
 
@@ -14,9 +15,8 @@ const router = createBrowserRouter([
     children: [
       { path: "", element: <Home /> },
       { path: "about", element: <About /> },
-      { path: "projects", element: <A /> },
+      { path: "projects", element: <ProjectPage /> },
       { path: "resume", element: <A /> },
-      { path: "xyz", element: <A /> },
       { path: "*", element: <PageNotFound /> },
     ]
   }
