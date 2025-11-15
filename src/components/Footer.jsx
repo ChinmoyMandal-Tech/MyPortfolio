@@ -1,5 +1,5 @@
 function Footer() {
-    const mailId = "chinmoymandal925809@gmail.com";
+    const mailId = "chinmoymandal925807@gmail.com";
 
     return (
         <footer id="main_footer" className="relative w-full pt-2.5 bg-[var(--footer_bg)] text-center md:flex">
@@ -15,7 +15,7 @@ function Footer() {
                 </div>
                 <div className="relative">
                     <a
-                        href="https://in.linkedin.com/in/chinmoy-mandal-7ab375282/"
+                        href="https://www.linkedin.com/in/chinmoy9202/"
                         target="_blank"
                         className="cursor-pointer group linkdin relative">
                         <i className="fa-brands fa-linkedin-in fa-xl"></i>
