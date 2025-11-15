@@ -36,7 +36,7 @@ function Skills() {
     ];
 
     return (<>
-        <div className="max-w-3xl mx-auto my-15 px-4 text-center">
+        <div className=" max-[400px]:px-0 max-w-3xl mx-auto my-15 px-4 text-center">
             <h2 className="text-4xl font-semibold mb-6 text-[var(--text)]"><span className="font-bold text-[var(--text_highlight)]">Skills & Technologies</span></h2>
             <div className="flex flex-wrap justify-center gap-6">
                 {skills.map((skill) => (
